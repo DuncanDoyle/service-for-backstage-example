@@ -4,6 +4,9 @@ metadata:
   name: petstore
   namespace: external-systems
   description: Petstore
+  annotations:
+    backstage.io/kubernetes-label-selector: 'app=pets-rest-api'
+    # backstage.io/kubernetes-id: value
 spec:
   type: service
   lifecycle: experimental
